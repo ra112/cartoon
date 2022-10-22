@@ -1,0 +1,219 @@
+
+
+<html><head>
+<title>survey</title>
+<meta charset="UTF-8">
+<style>
+ body {
+ background-image: url("back.jpg"); 
+ }
+ 
+  .a{ background-color: #F3DCBC;
+  height: 300px;
+  width: 99%;
+  font-size:50px;
+   box-shadow: 5px 10px 18px #888888;
+    border: 10px solid #D8A869;
+	border-style: dotted;
+	text-shadow: 2px 2px #888888;
+	
+}
+
+  
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: purple;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: pink;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: purple;
+}
+
+.s{position:absolute;
+left:400;
+color:purple;
+background-color:pink;
+width:400}
+
+input[type=text], select {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 9px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type=submit] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 9px 0;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  background-color:purple;
+  cursor: pointer;
+  color:white;
+}
+input[type=submit]:hover {
+  background-color: pink;
+}
+
+ 
+   table {
+    background-color: #F3DCBC; 
+    height: 100px;
+    width: 100%;
+    margin-top:925px;
+    box-shadow: 5px 10px 18px #888888;
+    border: 10px solid #D8A869;
+	border-style: dotted;
+	color:purple; 
+	text-shadow: 1px 1px #888888;
+	text-align:left
+	}
+	
+  </style></head> <body>
+
+<div class="a" id="a">
+<h1 style="position: absolute; top:0;right: 750;color:#5CD2F3;">C</h1>
+<h1 style="position: absolute; top:0;right: 700;color:#D57A2F;" >A </h1>
+<h1 style="position: absolute; top:0;right: 650;color:#F9B1B1;" >R </h1>
+<h1 style="position: absolute; top:0;right: 600;color:#FAD42D;" >T </h1>
+<h1 style="position: absolute; top:0;right: 550;color:#FAEF1F;" >O </h1>
+<h1 style="position: absolute; top:0;right: 500;color:#B9BABE;" >O </h1>
+<h1 style="position: absolute; top:0;right: 450;color:white;" >N </h1>
+<h1 style="position: absolute; top:0;right: 400;color:#F49222;" >Y </h1>
+<h1 class="custom-select" style= "position: absolute; top:50;right: 1050; width= 200%; height=200% ;">
+</div>
+
+
+
+<div id="mySidebar" class="sidebar">
+
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="home.html">HOME</a>
+<ul style="font-size: 25px;color: #818181;"><h3>cartoons</h3>
+ <li> <a href="gumball.html">gumball </a></li>
+ <li> <a href="SpongeBob SquarePants.html">spongebob</a></li>
+ <li><a href="jake and finn.html">jake and finn</a></li>
+ <li><a href="we bear bears.html">we bare bears</a></li>
+ <li><a href="survey.html">survey</a></li>
+ <li>contact us
+ <ol>
+    <li><a href = "survey.html">
+    <img src= "form.PNG" style="width:20; height:20;" ></a>
+    <li><a href = "mailto: cartoony909@gmail.com">
+    <img src= "mail.png" style="width:20; height:20;" ></a>
+  </li>
+  </ol>
+ <ul>
+</div>
+
+<div >
+<button class="openbtn" onclick="openNav()" style="position:absolute; left:20; top:40;">☰</button>  
+</button>
+</div>
+<div class="s">
+<div class="input">
+<form  method="get">
+  <h4 > <label for="fname"> name:</label> </h4><br>
+  <input type="text" id="name" name="name" placeholder="ahmed"><br>
+ <h4> <label for="gender">Choose your gender:</label> </h4>
+  <select id="gender" name="gender">
+  <option value="fmale">fmale</option>
+  <option value="male">male</option>
+</select>
+  <h4> <label for="email">email:</label> </h4><br>
+  <input type="text" id="email" name="email" placeholder="example@gmail.com"><br><br>
+
+
+<h4>choose your favorite cartoon:</h4>
+<input type="checkbox" id="cn1" name="spongebob" value="spongebob">
+<label for="cn1"> spongebob</label><br>
+<input type="checkbox" id="cn2" name="gumball" value="gumball">
+<label for="cn2">gumball</label><br>
+<input type="checkbox" id="cn3" name="jake & finn" value="jake & finn">
+<label for="cn3">jake and finn</label><br>
+<input type="checkbox" id="cn3" name="we bare bears" value="we bare bears">
+<label for="cn3">we bare bears</label><br>
+
+
+
+<h4>how do you find our website:</h4>
+
+  <input type="radio" id="ex" name="rate" value="ex">
+  <label for="ex">excellent</label>
+<input type="radio" id="good" name="rate" value="good">
+  <label for="good">good</label>
+  <input type="radio" id="week" name="rate" value="week">
+  <label for="week">week</label>
+  
+
+
+
+<h4>leave a comment:</h4>
+<textarea name="message" rows="10" cols="30" placeholder="exampl:gumball episode 1 is not working">
+</textarea><br>
+		   <input onclick="myFunction()" type="submit" value="Submit"></div></div></form>
+
+<table>
+<tr>
+<th >Contact us:</th>
+<th >survey:</th>
+</tr>
+<tr>
+<td><a href = "https://www.instagram.com/cartoony61/"><img src= "inst.PNG" style="width:60; height:50;" ></a></td>
+<td><a href = "survey.html"><img src= "form.PNG" style="width:40; height:40;" ></a></td>
+</tr>
+</table>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";}
+  
+  function myFunction() {
+  alert("thank you for your feedback");}
+</script>
+</body> </html> 
